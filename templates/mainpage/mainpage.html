@@ -232,12 +232,12 @@
                             {{fill_form.custom_citizenship}}
                         </div>
                         <div class="form_text-input _resume">
-                            <p>Резюме (ссылка или вложение формата PDF, doc, docx)</p>
+                            <p>Резюме (ссылка или вложение формата PDF, doc, docx)
+                                <label for="id_resume_file" class="file-label">
+                                    <img class="file" src="{% static 'imgs/file.png' %}" alt="">
+                                </label></p>
                             <div class="form_text-input-resume">
                                 <div class="form_text-input-item">
-                                    <label for="id_resume_file">
-                                        <img class="file" src="{% static 'imgs/file.png' %}" alt="">
-                                    </label>
                                     {{fill_form.resume_file}}
                                 </div>
                                 <div class="form_text-input-item">

@@ -1178,3 +1178,17 @@ header {
 footer {
     margin-top: 30px;
 }
+
+.file-label {
+    margin-top: 0px !important;
+    width: 30px;
+    display: inline-block !important;
+}
+
+.file-label img {
+    width: 40px;
+}
+
+.file {
+    cursor: pointer;
+}
