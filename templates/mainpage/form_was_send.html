@@ -1,0 +1,8 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <div class="form-was-send">
+        <p class="form-was-send-text">Анкета отправлена. Скоро мы с Вами свяжемся</p>
+        <a class="form-was-send_link" href="{% url 'main' %}"><button class="form-was-send_back">Назад</button></a>
+    </div>
+{% endblock %}

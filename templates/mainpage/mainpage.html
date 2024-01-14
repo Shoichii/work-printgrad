@@ -1,0 +1,451 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block title %}Работа Принтград{% endblock %}
+
+{% block content %}
+<!-- <div class="header_up">
+    <div class="header_up-logo"><img src="{% static 'imgs/logo.jpg' %}" alt=""></div>
+    <div class="header_up-number">
+        <a href="https://wa.me/79103519987">
+            <img src="{% static 'imgs/whatsapp.png' %}" alt="">
+            <p>Whatsapp</p>
+        </a>
+        <a href="https://t.me/+79103519987">
+            <img src="{% static 'imgs/telegram.png' %}" alt="">
+            <p>Telegram</p>
+        </a>
+    </div>
+</div> -->
+<div class='box'>
+    <div class='wave -one'></div>
+    <div class='wave -two'></div>
+    <div class='wave -three'></div>
+</div>
+<div class="content">
+    <header class="scroll-reveal">
+        <div class="header_down">
+            <div class="header_down_content">
+                <div class="header_down-left-block">
+                    <p class="header_down_text">
+                        Создаем возможности<br /> для карьерного роста<br />
+                    </p>
+                    <button class="header_down-join-us">ОТПРАВИТЬ РЕЗЮМЕ</button>
+                    <!-- <button class="header_down-join-us">Стать инженером</button> -->
+                </div>
+                <div class="header_down-right-block">
+                    <img src="{% static 'imgs/header3.png' %}" alt="инженер">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="about-us scroll-reveal">
+            <p class="title ">Присоединяйся к компании "ПРИНТГРАД"</p>
+            <div class="lists">
+                <ul class="about-us_items">
+                    <li><img src="{% static 'imgs/block2/1.png' %}" alt="">
+                        <p>150+ постоянных клиентов</p>
+                    </li>
+                    <li><img src="{% static 'imgs/block2/2.png' %}" alt="">
+                        <p>большой опыт работы на рынке</p>
+                    </li>
+                </ul>
+                <ul class="about-us_items">
+                    <li><img src="{% static 'imgs/block2/3.png' %}" alt="">
+                        <p>100+ городов в зоне обслуживания</p>
+                    </li>
+                    <li><img src="{% static 'imgs/block2/4.png' %}" alt="">
+                        <p>работаем с крупными сетевыми компаниями</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="button-link">
+                <a class="header_down-join-us" target="_blank"
+                    href="https://voronezh.hh.ru/search/vacancy?from=employerPage&employer_id=654353&hhtmFrom=employer">ПОСМОТРЕТЬ
+                    АКТУАЛЬНЫЕ
+                    ВАКАНСИИ</a>
+            </div>
+        </div>
+        <!-- <div class="earn-calc scroll-reveal">
+        <p class="title ">Калькулятор дохода</p>
+        <form action="post">
+            {% csrf_token %}
+
+            <div class="earn-calc_select">
+                <label for="id_city">Выберите город</label>
+                {{form_calc.city}}
+            </div>
+            <div class="earn-calc_select">
+                <label for="id_vacancy">Выберите вакансию в этом городе</label>
+                {{form_calc.vacancy}}
+            </div>
+        </form>
+        <div class="earn-calc_description">
+            <div>
+                <p class="earn-calc_description_name earn-calc_description_title"></p>
+            </div>
+            <div>
+                <p class="earn-calc_description_salary earn-calc_description_title"></p>
+            </div>
+            <div>
+                <p class="earn-calc_description_responsibilities earn-calc_description_title">Обязанности</p>
+                <p class="earn-calc_description_responsibilities_text earn-calc_description_text"></p>
+            </div>
+            <div>
+                <p class="earn-calc_description_requirements earn-calc_description_title">Требования</p>
+                <p class="earn-calc_description_requirements_text earn-calc_description_text"></p>
+            </div>
+            <div>
+                <p class="earn-calc_description_conditions earn-calc_description_title">Условия</p>
+                <p class="earn-calc_description_conditions_text earn-calc_description_text"></p>
+            </div>
+        </div>
+    </div> -->
+
+        <div class="our-advantages scroll-reveal">
+            <div class="our-advantages_content">
+                <p class="title our-advantages-title">Наши преимущества</p>
+                <div class="our-advantages_advantages">
+                    <div class="our-advantages_advantage">
+                        <img class="our-advantages_advantage_icon" src="{% static 'imgs/earning.png' %}" alt="">
+                        <p class="our-advantages_advantage_title">Гарантированный доход</p>
+                        <p class="our-advantages_advantage_text"></p>
+                    </div>
+                    <div class="our-advantages_advantage">
+                        <img class="our-advantages_advantage_icon" src="{% static 'imgs/shedule.png' %}" alt="">
+                        <p class="our-advantages_advantage_title">График работы удобный для Вас</p>
+                        <p class="our-advantages_advantage_text"></p>
+                    </div>
+                    <div class="our-advantages_advantage">
+                        <img class="our-advantages_advantage_icon" src="{% static 'imgs/home.png' %}" alt="">
+                        <p class="our-advantages_advantage_title">Работа в домашнем регионе</p>
+                        <p class="our-advantages_advantage_text"></p>
+                    </div>
+                    <div class="our-advantages_advantage">
+                        <img class="our-advantages_advantage_icon" src="{% static 'imgs/auto.png' %}" alt="">
+                        <p class="our-advantages_advantage_title">Служебный автомобиль</p>
+                        <p class="our-advantages_advantage_text"></p>
+                    </div>
+                    <div class="our-advantages_advantage">
+                        <img class="our-advantages_advantage_icon" src="{% static 'imgs/comp.png' %}" alt="">
+                        <p class="our-advantages_advantage_title">Компенсация за использование личного автомобиля</p>
+                        <p class="our-advantages_advantage_text"></p>
+                    </div>
+                    <div class="our-advantages_advantage">
+                        <img class="our-advantages_advantage_icon" src="{% static 'imgs/support.png' %}" alt="">
+                        <p class="our-advantages_advantage_title">Материальная поддержка</p>
+                        <p class="our-advantages_advantage_text"></p>
+                    </div>
+                    <div class="our-advantages_advantage">
+                        <img class="our-advantages_advantage_icon" src="{% static 'imgs/instrmts.png' %}" alt="">
+                        <p class="our-advantages_advantage_title">Оборудование для работы</p>
+                        <p class="our-advantages_advantage_text"></p>
+                    </div>
+                    <div class="our-advantages_advantage">
+                        <img class="our-advantages_advantage_icon" src="{% static 'imgs/bonus.png' %}" alt="">
+                        <p class="our-advantages_advantage_title">Бонусы и доплаты</p>
+                        <p class="our-advantages_advantage_text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="start-now scroll-reveal">
+            <div class="start-now_content">
+                <p class="start-now_title title">Начните сейчас</p>
+                <div class="start-now_content_items">
+                    <div class="start-now_item">
+                        <div class="start-now_number">
+                            <p>1</p>
+                        </div>
+                        <p class="start-now_item-title">Заполни анкету</p>
+                        <p class="start-now_item-text">Мы рассмотрим<br /> резюме за 1<br /> рабочий день </p>
+                    </div>
+                    <div class="start-now_item">
+                        <div class="start-now_number">
+                            <p>2</p>
+                        </div>
+                        <p class="start-now_item-title">Пройди собеседование</p>
+                        <p class="start-now_item-text">Наш сотрудник<br /> перезвонит и назначит<br /> встречу в удобное
+                            время
+                        </p>
+                    </div>
+                    <div class="start-now_item">
+                        <div class="start-now_number">
+                            <p>3</p>
+                        </div>
+                        <p class="start-now_item-title">Работай</p>
+                        <p class="start-now_item-text">Выбирай удобный для<br /> себя график и<br /> территорию работы
+                        </p>
+                    </div>
+                    <div class="start-now_item">
+                        <div class="start-now_number">
+                            <p>4</p>
+                        </div>
+                        <p class="start-now_item-title">Зарабатывай</p>
+                        <p class="start-now_item-text">Получай достойную<br /> и своевременную<br /> оплату труда</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fill-form scroll-reveal">
+            <div class="title ">Заполните анкету</div>
+            <form class="form" method="post" action="{% url 'form_data' %}" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="fill-form_border">
+                    <div class="form-border">
+                        <div class="form_text-input">
+                            <label for="id_name">ФИО *</label>
+                            {{fill_form.first_name}}
+                        </div>
+                        <!-- <div class="form_text-input">
+                            <label for="id_last_name">Фамилия</label>
+                            {{fill_form.last_name}}
+                        </div>
+                        <div class="form_text-input">
+                            <label for="id_surname">Отчество</label>
+                            {{fill_form.surname}}
+                        </div> -->
+                        <div class="form_text-input">
+                            <label for="id_birthday">Дата рождения: *</label>
+                            {{fill_form.birthday}}
+                        </div>
+                        <!-- <div class="form_text-input">
+                            <label for="citizenship">Город</label>
+                            {{fill_form.city}}
+                        </div>
+                        <div class="form_text-input">
+                            <label for="citizenship">Вакансия</label>
+                            {{fill_form.vacancy}}
+                        </div> -->
+                        <div class="form_text-input">
+                            <label for="id_phone">Телефон: *</label>
+                            {{fill_form.phone}}
+                            <!-- <input type="text" id="phone" placeholder="___-__-__" value="+7 "> -->
+                        </div>
+                        <div class="form_text-input">
+                            <label for="citizenship">Гражданство</label>
+                            {{fill_form.citizenship}}
+                        </div>
+                        <div class="form_text-input hidden">
+                            <label for="citizenship">Ваше гражданство</label>
+                            {{fill_form.custom_citizenship}}
+                        </div>
+                        <div class="form_text-input _resume">
+                            <p>Резюме (ссылка или вложение формата PDF, doc, docx)</p>
+                            <div class="form_text-input-resume">
+                                <div class="form_text-input-item">
+                                    <label for="id_resume_file">
+                                        <img class="file" src="{% static 'imgs/file.png' %}" alt="">
+                                    </label>
+                                    {{fill_form.resume_file}}
+                                </div>
+                                <div class="form_text-input-item">
+                                    {{fill_form.resume_link}}
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="form_text-input">
+                            <label for="sources" class="fill-form-source-label">Откуда Вы о нас узнали</label>
+                            <div class="fill-form-source-items">
+                                {% for src in fill_form.sources %}
+                                {{src}}
+                                {% endfor %}
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <button class="btn-donate" type="submit">
+                    ОТПРАВИТЬ АНКЕТУ
+                </button>
+            </form>
+        </div>
+        <div class="questions scroll-reveal">
+            <div class="questions-container">
+                <p class="title">Популярные вопросы</p>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                1. Какие служебные автомобили?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Служебные автомобили с механической коробкой передач: LADA granta, LADA largus.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                2. Могу работать на своем автомобиле?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Можете. За использование своего автомобиля в рабочих целях предусматривается
+                                компенсация.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                3. Как стать самозанятым?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                - Скачиваем приложение «Мой налог»<br />
+                                - Регистрируемся по паспорту<br />
+                                - Регистрируемся через портал госуслуг или личный кабинет на сайте ФНС<br />
+                                - Регистрируемся через личный кабинет плательщика НПД или приложение банка<br />
+                                Подробнее, вам будет рассказано руководителем на собеседовании.<br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                4. Как стать индивидуальным предпринимателем?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                4.1. Выбрать (уточнить у руководителя) коды видов деятельности по ОКВЭД<br />
+                                4.2. Выберите систему налогообложения<br />
+                                4.3. Заполните заявления по форме Р21001<br />
+                                4.4. Оплатите госпошлину<br />
+                                4.5. Соберите пакет документов и подайте в регистрирующий орган<br />
+                                4.5.1. В бумажном виде<br />
+                                4.5.2. В электронном виде<br />
+                                4.6. После рассмотрения получают лист записи Единого государственного реестра
+                                индивидуальных
+                                предпринимателей (ЕГРИП) и уведомление о постановке на учет физического лица в налоговом
+                                органе по электронной почте.<br />
+                                Подробнее, вам будет рассказано руководителем на собеседовании.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                5. Будет помощь в ведении отчетности?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Сотрудники отдела бухгалтерия помогут в ведении отчетности и оплаты налогов.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="note">* Уровень дохода индивидуален и может отличаться в зависимости от региона, должности,
+                    количества выполненных работ и продолжительности смены.</p>
+
+            </div>
+        </div>
+        <div class="slider scroll-reveal">
+            <div class="slider-title">
+                <p class="title ">Наши клиенты</p>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider-img-wrapper">
+                            <img src="{% static 'imgs/logos/1.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-img-wrapper">
+                            <img src="{% static 'imgs/logos/2.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-img-wrapper">
+                            <img src="{% static 'imgs/logos/3.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-img-wrapper">
+                            <img src="{% static 'imgs/logos/4.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-img-wrapper">
+                            <img src="{% static 'imgs/logos/5.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-img-wrapper">
+                            <img src="{% static 'imgs/logos/6.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-img-wrapper">
+                            <img src="{% static 'imgs/logos/7.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-img-wrapper">
+                            <img src="{% static 'imgs/logos/8.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-img-wrapper">
+                            <img src="{% static 'imgs/logos/9.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-img-wrapper">
+                            <img src="{% static 'imgs/logos/10.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-img-wrapper">
+                            <img src="{% static 'imgs/logos/11.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-img-wrapper">
+                            <img src="{% static 'imgs/logos/12.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-img-wrapper">
+                            <img src="{% static 'imgs/logos/13.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p class="rating-title title">Наш рейтинг на Dreamjob</p>
+        <div class="rating">
+            <!--dj rating--><a href="https://dreamjob.ru/employers/26030" target="_blank"><img data-id="wg-26030-1-2"
+                    width="170" height="114" title="Рейтинг работодателя на Dream Job"
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3C/svg%3E"
+                    alt="Принтград, ГК отзывы сотрудников о работодателе на Dream Job" style="border:0" /></a>
+            <script>(function (s) { document.querySelectorAll("[data-id=wg-26030-1-2]").forEach(function (e) { e.src = s }) }("https://dreamjob.ru/uploads/widgets/wg-26030-1-2.svg?" + ~~(Date.now() / 864e5)))</script>
+            <!--/dj rating-->
+        </div>
+        <div class="footer_bottom-text">
+            <p class="footer_text">Обращайтесь к нашему специалисту отдела кадров по любому вопросу удобным для вас
+                способом 8
+                910 351-99-87 | Whatsapp | Telegram</p>
+            <p class="footer_text_2">ООО "ПРИНТГРАД"
+                Юр.адрес 394026 Воронежская обл., г. Воронеж, ул. Дружинников, Д. 11, ИНН 3662216487 ОГРН 1153668056255
+            </p>
+        </div>
+    </footer>
+</div>
+{% endblock %}
